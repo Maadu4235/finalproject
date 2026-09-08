@@ -9,16 +9,16 @@ jobs:
 
     steps:
       - name: Checkout code
-      uses: actions/checkout@v5
+        uses: actions/checkout@v4
 
-      - name: set up python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.12'
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
 
-      - name: install pytest
-      run: pip install pytest
+      - name: Install pytest
+        run: pip install pytest
 
-      - name: run pytest
-      run: python -m pytest
+      - name: Run pytest
+        run: python -m pytest
       
