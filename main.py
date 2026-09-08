@@ -6,7 +6,7 @@ def A():
 def B():
     return "second function"
 
-def C(int a,int b):
+def C(a,b):
     return a+b
 
 if __name__=="__main__":
