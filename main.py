@@ -1,10 +1,10 @@
 from multiprocessing import Process
 
 def A():
-    print("first function")
+    return "first function"
 
 def B():
-    print("second function")
+    return "second function"
 
 if __name__=="__main__":
     p1=Process(target=A)
