@@ -11,14 +11,14 @@ jobs:
       - name: Checkout code
       uses: actions/checkout@v5
 
-      -name: set up python
+      - name: set up python
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
 
-      -name: install pytest
+      - name: install pytest
       run: pip install pytest
 
-      -name: run pytest
+      - name: run pytest
       run: python -m pytest
       
