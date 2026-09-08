@@ -1,4 +1,4 @@
-from main import A,B
+from main import A,B,C
 
 def test_A():
     assert A() == "first function"
